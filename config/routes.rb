@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   resources :contacts
-  get "/" => "contacts#new"
+  #ロケット記法（get "/" => "contacts#new"）は古い記法のため非推奨。
+  root 'contacts#new'
 end
